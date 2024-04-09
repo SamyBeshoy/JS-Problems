@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Beshoy Samy Englizy">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let myArray = [1, -2, 8, 9, 2, 10, -50];
+        let newArray = [];
+        let finalR = 0;
+        for (let i = 0; i < myArray.length; i++) {
+            if (myArray[i] > 0) {
+                newArray.push(myArray[i]);
+            } 
+        }
+        for (let j = 0; j < newArray.length; j++) {
+            finalR += newArray[j];
+        }
+        console.log(finalR);
+    </script>
+</body>
+</html>
