@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Beshoy Samy Englizy">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let myArray = [1, 5, 4, 8, 20, 10, -2, -5, 4];
+        let newArray = [];
+        let final = 0;
+        function operation(params) {
+            let max = Math.max(...params);
+            let min = Math.min(...params);
+            for (let i = 0; i < params.length; i++) {
+                if (params[i] < max  && params[i] > min) {
+                    newArray.push(myArray[i]);
+                }
+            }
+            for (let j = 0; j < newArray.length; j++) {
+                final += newArray[j];
+            }
+            console.log(final);
+        }
+        operation(myArray); //Need Array
+    </script>
+</body>
+</html>
