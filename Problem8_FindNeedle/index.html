@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Beshoy Samy Englizy">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function findNeedle(array) {
+            for (let i = 0; i < array.length; i++) {
+                if (array[i] === "Needle") {
+                    console.log(`Found Needle At Position ${array.indexOf("Needle") + 1}`);
+                }
+            }
+        }
+        findNeedle(["Hi", "Apple", "Needle", "Pea"]);
+    </script>
+</body>
+</html>
