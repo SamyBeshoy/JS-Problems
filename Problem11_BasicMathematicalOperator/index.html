@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Beshoy Samy Englizy">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom Meta Tag For Date -->
+    <meta name="date" content="2024-04-17"> <!-- Year - Month - Day -->
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Way Number 1
+        function operation(operator, value1, value2) {
+            let result;
+            switch (operator) {
+                case '+':
+                    result = value1 + value2;
+                    break;
+                case '-':
+                    result = value1 - value2;
+                    break;
+                case '*':
+                    result = value1 * value2;
+                    break;
+                case '/':
+                    result = value1 / value2;
+                    break;
+                default:
+                    console.log('Invalid operator');
+                }
+                console.log(result);
+        }
+        operation("*", 2, "4");
+        operation("+", 2, 4);
+
+        // Way Number 2
+        function operation2(operator, value1, value2) {
+            console.log(eval(value1 + operator + value2));
+        }
+        operation2("/", 2, "4");
+        operation2("-", 2, 4);
+
+        // Way Number 3
+        function operation3(operator, value1, value2) {
+            if (operator == "+") {
+                console.log(value1 + value2);
+            }
+            if (operator == "-") {
+                console.log(value1 + value2);
+            }
+            if (operator == "*") {
+                console.log(value1 * value2);
+            }
+            if (operator == "/") {
+                console.log(value1 / value2);
+            }
+        }
+        operation3("*", 3, "4");
+        operation3("+", 4, 4);
+    </script>
+</body>
+</html>
