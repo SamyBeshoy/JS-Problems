@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Beshoy Samy Englizy">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom Meta Tag For Date -->
+    <meta name="date" content="2024-04-26"> <!-- Year - Month - Day -->
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function greet(language) {
+            let languages = {
+                english: "Welcome",
+                czech: "Vitejte",
+                danish: "Velkomst",
+                dutch: "Welkom",
+                estonian: "Tere tulemast",
+                finnish: "Tervetuloa",
+                flemish: "Welgekomen",
+                french: "Bienvenue",
+                german: "Willkommen",
+                irish: "Failte",
+                italian: "Benvenuto",
+                latvian: "Gaidits",
+                lithuanian: "Laukiamas",
+                polish: "Witamy",
+                spanish: "Bienvenido",
+                swedish: "Valkommen",
+                welsh: "Croeso",
+            };
+            if (languages.hasOwnProperty(language)) {
+                console.log(languages[language]);
+            } else {
+                console.log(languages["english"]);
+            }
+        }
+        greet("german");
+    </script>
+</body>
+</html>
