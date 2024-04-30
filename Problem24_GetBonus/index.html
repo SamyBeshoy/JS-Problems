@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Beshoy Samy Englizy">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom Meta Tag For Date -->
+    <meta name="date" content="2024-04-30"> <!-- Year - Month - Day -->
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getBonus(name, salary, bonus = true) {
+            if (bonus == true) {
+                console.log(`${name} Salary: €${salary + salary / 10}`); 
+            } else {
+                console.log(`${name} Salary: €${salary}`); 
+            }
+        }
+        getBonus("Mark", 1000);
+        getBonus("John", 1000, false);
+    </script>
+</body>
+</html>
